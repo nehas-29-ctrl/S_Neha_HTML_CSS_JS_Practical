@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a responsive login form with JavaScript validation. | S. Neha</title>
+<meta name="description" content="JavaScript practical demonstration.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../javascript/index.html">Javascript</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 44</p>
+  <h1>Create a responsive login form with JavaScript validation.</h1>
+  <p class="lead">JavaScript practical demonstration.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <form onsubmit='return run()'><input id='email' type='email' placeholder='Email' required><input id='password' type='password' placeholder='Password' required minlength='6'><button>Login</button></form><div id='out' class='output'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+function run(){document.getElementById('out').textContent='Validation passed.';return false;}
+</script>
+</body>
+</html>

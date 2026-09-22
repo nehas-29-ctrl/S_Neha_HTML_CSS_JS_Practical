@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a student marks/grade calculator. | S. Neha</title>
+<meta name="description" content="Marks / grade calculator.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../mini-projects/index.html">Mini-Projects</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 11</p>
+  <h1>Create a student marks/grade calculator.</h1>
+  <p class="lead">Marks / grade calculator.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <input id='marks' value='80,72,91'><button onclick='run()'>Calculate</button><div id='out' class='output'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+function run(){const a=marks.value.split(',').map(Number),avg=a.reduce((x,y)=>x+y,0)/a.length;out.textContent=`Total=${a.reduce((x,y)=>x+y,0)}, Average=${avg.toFixed(2)}, Grade=${avg>=90?'A':avg>=75?'B':avg>=60?'C':'D'}`}
+</script>
+</body>
+</html>

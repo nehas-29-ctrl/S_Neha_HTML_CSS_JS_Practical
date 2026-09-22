@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a notes application using localStorage. | S. Neha</title>
+<meta name="description" content="Notes with localStorage.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../mini-projects/index.html">Mini-Projects</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 13</p>
+  <h1>Create a notes application using localStorage.</h1>
+  <p class="lead">Notes with localStorage.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <textarea id='note' placeholder='Write a note'></textarea><button onclick="localStorage.setItem('hariNote',note.value);out.textContent='Saved'">Save</button><button onclick="note.value=localStorage.getItem('hariNote')||''">Load</button><div id='out' class='output'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+
+</body>
+</html>

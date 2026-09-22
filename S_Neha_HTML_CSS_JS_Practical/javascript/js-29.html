@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a form validation program. | S. Neha</title>
+<meta name="description" content="JavaScript practical demonstration.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../javascript/index.html">Javascript</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 29</p>
+  <h1>Create a form validation program.</h1>
+  <p class="lead">JavaScript practical demonstration.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <input id='guess' type='number' value='5'><button onclick='run()'>Guess 1–10</button><div id='out' class='output'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+const secret=Math.floor(Math.random()*10)+1;function run(){const g=+document.getElementById('guess').value;document.getElementById('out').textContent=g===secret?'Correct!':'Try again.';}
+</script>
+</body>
+</html>

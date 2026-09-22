@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a form that displays a preview of entered information before submission. | S. Neha</title>
+<meta name="description" content="Form validation demonstration.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../forms-validation/index.html">Forms-Validation</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 34</p>
+  <h1>Create a form that displays a preview of entered information before submission.</h1>
+  <p class="lead">Form validation demonstration.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <form onsubmit="event.preventDefault();out.textContent=this.checkValidity()?'Validation passed.':'Validation failed.'"><div class='form-grid'><input required placeholder='Name'><input required type='email' placeholder='Email'><input required minlength='6' type='password' placeholder='Password'></div><br><button>Validate</button></form><div id='out' class='output'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+
+</body>
+</html>

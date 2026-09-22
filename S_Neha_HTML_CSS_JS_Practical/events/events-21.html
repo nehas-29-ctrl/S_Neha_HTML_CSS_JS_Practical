@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonstrate event bubbling. | S. Neha</title>
+<meta name="description" content="JavaScript event demonstration.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../events/index.html">Events</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 21</p>
+  <h1>Demonstrate event bubbling.</h1>
+  <p class="lead">JavaScript event demonstration.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <button id='eventBtn'>Interact</button><div id='out' class='output'>Waiting for event…</div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+const b=document.getElementById('eventBtn');b.addEventListener('click',()=>out.textContent='Event fired successfully.');b.addEventListener('dblclick',()=>out.textContent='Double-click event fired.');b.addEventListener('mouseover',()=>out.textContent='Mouse over event fired.');
+</script>
+</body>
+</html>

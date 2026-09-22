@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a countdown timer using JavaScript. | S. Neha</title>
+<meta name="description" content="JavaScript practical demonstration.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../javascript/index.html">Javascript</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 35</p>
+  <h1>Create a countdown timer using JavaScript.</h1>
+  <p class="lead">JavaScript practical demonstration.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <input id='mins' type='number' value='1' min='0'><button onclick='start()'>Start Countdown</button><div id='out' class='output'>Ready</div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+let timer;function start(){clearInterval(timer);let s=+document.getElementById('mins').value*60;timer=setInterval(()=>{document.getElementById('out').textContent=s+' seconds';if(s<=0)clearInterval(timer);s--;},1000);}
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a digital clock. | S. Neha</title>
+<meta name="description" content="Digital clock.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../mini-projects/index.html">Mini-Projects</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 2</p>
+  <h1>Create a digital clock.</h1>
+  <p class="lead">Digital clock.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <div id='clock' class='output' style='font-size:2rem'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+setInterval(()=>clock.textContent=new Date().toLocaleTimeString(),1000)
+</script>
+</body>
+</html>

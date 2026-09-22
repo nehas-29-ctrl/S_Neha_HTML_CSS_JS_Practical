@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write a program to check whether a number is positive, negative, or zero. | S. Neha</title>
+<meta name="description" content="JavaScript practical demonstration.">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">S. Neha • Practical Programs</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../javascript/index.html">Javascript</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section">
+<div class="container">
+  <p class="kicker">Experiment 5</p>
+  <h1>Write a program to check whether a number is positive, negative, or zero.</h1>
+  <p class="lead">JavaScript practical demonstration.</p>
+  
+  <div class="panel">
+    <h2>Working Demonstration</h2>
+    <input id='n' type='number' value='-4'><button onclick='run()'>Check</button><div id='out' class='output'></div>
+  </div>
+</div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>S. Neha</strong> • PRN 250200386 • Section 5<br>
+    HTML, CSS & JavaScript Practical Programs
+  </div>
+</footer>
+<script>
+function run(){const n=+document.getElementById('n').value;document.getElementById('out').textContent=n>0?'Positive':n<0?'Negative':'Zero';}
+</script>
+</body>
+</html>
